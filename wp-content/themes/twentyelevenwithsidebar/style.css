@@ -1,0 +1,16 @@
+/*
+Theme Name:     Twenty Eleven Child with Sidebar Support
+Theme URI:      http://futurewebblog.com/add-sidebar-support-posts-twenty-eleven-theme/
+Description:    Child theme for the Twenty Eleven which includes support for sidebars on posts
+Author:         Chris Aprea
+Template:       twentyeleven
+Version:        1.1
+*/
+
+/* We must first include the original css from the parent theme */
+@import url("../twentyeleven/style.css");
+
+.wdgpo {
+	float: left;
+	height: 100px;
+}
