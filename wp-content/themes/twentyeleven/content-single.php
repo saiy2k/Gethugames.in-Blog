@@ -20,6 +20,11 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+        <div class="g-plusone" data-href="<?php get_permalink() ?>" style='display:inline'></div>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url='<?php get_permalink() ?>'>Tweet</a>
+        <script type="IN/Share" data-url="<?php get_permalink() ?>" data-counter="right"></script>
+        <span style='margin-right: 3%'></span>
+        <div class="fb-like" data-href="<?php get_permalink() ?>" data-send="false" data-layout="button_count" data-width="200" data-show-faces="false" data-colorscheme="dark" data-font="verdana" style='display:inline; padding-bottom:2px'></div>
 		<?php the_content(); ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'twentyeleven' ) . '</span>', 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->

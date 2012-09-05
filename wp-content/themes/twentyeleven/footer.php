@@ -45,33 +45,37 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
 
-window.___gcfg = {lang: 'en'};
-(function() 
-{var po = document.createElement("script");
-po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";
-var s = document.getElementsByTagName("script")[0];
-s.parentNode.insertBefore(po, s);
-})();
+function addSocial() {
+    window.___gcfg = {lang: 'en'};
+    (function() 
+    {var po = document.createElement("script");
+    po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(po, s);
+    })();
 
-(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=351450054904687";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=351450054904687";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
 
-(function(d, s) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  js = d.createElement(s); js.id = 'linkedin-jssdk';
-  js.src = "//platform.linkedin.com/in.js";
-  fjs.parentNode.insertBefore(js, fjs);
-  js.onload = function() {
-      IN.init();
-  };
-}(document, 'script'));
+    (function(d, s) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      js = d.createElement(s); js.id = 'linkedin-jssdk';
+      js.src = "//platform.linkedin.com/in.js";
+      fjs.parentNode.insertBefore(js, fjs);
+      js.onload = function() {
+          IN.init();
+      };
+    }(document, 'script'));
 
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+};
+
+window.setTimeout(addSocial, 5000);
 
 </script>
 
